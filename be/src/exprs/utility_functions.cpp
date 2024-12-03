@@ -53,7 +53,7 @@
 namespace starrocks {
 
 StatusOr<ColumnPtr> UtilityFunctions::version(FunctionContext* context, const Columns& columns) {
-    return ColumnHelper::create_const_column<TYPE_VARCHAR>("5.1.0", 1);
+    return ColumnHelper::create_const_column<TYPE_VARCHAR>("8.0.33", 1);
 }
 
 StatusOr<ColumnPtr> UtilityFunctions::current_version(FunctionContext* context, const Columns& columns) {
